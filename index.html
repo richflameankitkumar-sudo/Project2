@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>VapeShopChennai</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, sans-serif;
+}
+
+body{
+  background:#0f0f0f;
+  color:#fff;
+}
+
+/* HEADER */
+header{
+  background:#000;
+  padding:15px 20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+
+.nav-left{
+  display:flex;
+  align-items:center;
+  gap:20px;
+}
+
+header h1{
+  color:#00ff99;
+  font-size:22px;
+}
+
+nav{
+  display:flex;
+  gap:15px;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  font-weight:600;
+}
+
+nav a:hover{
+  color:#00ff99;
+}
+
+.whatsapp-btn{
+  background:#25D366;
+  color:#000;
+  padding:10px 14px;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:bold;
+  white-space:nowrap;
+}
+
+/* HERO */
+.hero{
+  height:400px;
+  background-image:
+    linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+    url('hero.webp');
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+.hero h2{
+  color:#00ff99;
+  font-size:32px;
+}
+
+.hero p{
+  color:#ccc;
+  margin-top:8px;
+}
+
+/* PRODUCTS */
+.products{
+  padding:40px 20px;
+  max-width:1200px;
+  margin:auto;
+}
+
+.products h2{
+  text-align:center;
+  color:#00ff99;
+  margin-bottom:30px;
+}
+
+.product-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+}
+
+.product{
+  background:#1a1a1a;
+  padding:15px;
+  border-radius:10px;
+  text-align:center;
+}
+
+.product img{
+  width:100%;
+  border-radius:8px;
+}
+
+.product h3{
+  margin:10px 0 5px;
+}
+
+.product h4{
+  color:#00ff99;
+  margin-bottom:5px;
+}
+
+.product p{
+  color:#bbb;
+  font-size:14px;
+}
+
+.product button{
+  margin-top:10px;
+  padding:8px 12px;
+  background:#25D366;
+  border:none;
+  border-radius:5px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+/* FOOTER */
+footer{
+  background:#000;
+  text-align:center;
+  padding:80px;
+  font-size:14px;
+  color:#ccc;
+}
+
+/* MOBILE FIX */
+@media(max-width:768px){
+  header{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:10px;
+  }
+
+  nav{
+    width:100%;
+    justify-content:space-between;
+  }
+
+  .hero{
+    height:250px;
+  }
+
+  .whatsapp-btn{
+    width:100%;
+    text-align:center;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="nav-left">
+    <h1>VapeShopChennai</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#products">Shop</a>
+      <a href="about.html">About Us</a>
+    </nav>
+  </div>
+
+  <a class="whatsapp-btn" href="https://wa.me/918950211927" target="_blank">
+    Order on WhatsApp
+  </a>
+</header>
+
+<section class="hero">
+  <h2>Premium Vape Store in Chennai</h2>
+  <p>Disposable Vapes | Pods | E-Liquids</p>
+</section>
+
+<section class="products" id="products">
+<h2>Our Products</h2>
+
+<div class="product-grid">
+
+<div class="product">
+<img src="https://vapestoregurgaon.in/assets/img/Product%20(1).jpeg">
+<h3>Majaj Lush Ice</h3>
+<h4>₹885.21</h4>
+<p>High puff, smooth flavour</p>
+<button onclick="orderNow('Majaj Lush Ice')">Order</button>
+</div>
+
+<div class="product">
+<img src="https://vapestoregurgaon.in/assets/img/Product%20(2).jpeg">
+<h3>Uwell Caliburn KOKO</h3>
+<h4>₹2,399</h4>
+<p>Compact & powerful</p>
+<button onclick="orderNow('Uwell Caliburn KOKO')">Order</button>
+</div>
+
+<div class="product">
+<img src="https://vapestoregurgaon.in/assets/img/Product%20(7).jpeg">
+<h3>Geek Bar Pulse</h3>
+<h4>₹2,456</h4>
+<p>Multiple flavours</p>
+<button onclick="orderNow('Geek Bar Pulse')">Order</button>
+</div>
+
+<div class="product">
+<img src="https://vapestoregurgaon.in/assets/img/Product%20(4).jpeg">
+<h3>Vaporesso XROS 3</h3>
+<h4>₹2,600</h4>
+<button onclick="orderNow('Vaporesso XROS 3')">Order</button>
+</div>
+
+<div class="product">
+<img src="https://vapestoregurgaon.in/assets/img/Product%20(5).jpeg">
+<h3>Aspire Gotek X</h3>
+<h4>₹2,499</h4>
+<button onclick="orderNow('Aspire Gotek X')">Order</button>
+</div>
+
+<div class="product">
+<img src="https://vapestoregurgaon.in/assets/img/Product%20(6).jpeg">
+<h3>Tastefog Gemini</h3>
+<h4>₹4,100</h4>
+<button onclick="orderNow('Tastefog Gemini')">Order</button>
+</div>
+
+<div class="product">
+<img src="https://vapestoregurgaon.in/assets/img/Product%20(3).jpeg">
+<h3>Elf Bar Wild Diesel</h3>
+<h4>₹1,650</h4>
+<button onclick="orderNow('Elf Bar Wild Diesel')">Order</button>
+</div>
+
+<div class="product">
+<img src="https://vapestoregurgaon.in/assets/img/Product%20(8).jpeg">
+<h3>Ripp V82</h3>
+<h4>₹1,650</h4>
+<button onclick="orderNow('Ripp V82')">Order</button>
+</div>
+
+<div class="product">
+<img src="https://smokefree.net/wp-content/uploads/2024/01/Disposable-Vapes-vs-Mods-1024x683.jpg">
+<h3>E-Liquid</h3>
+<h4>₹4,100</h4>
+<button onclick="orderNow('E-Liquid')">Order</button>
+</div>
+
+<div class="product">
+<img src="https://vapestoregurgaon.in/assets/img/category%20(2).png">
+<h3>E-Liquid Disposable</h3>
+<h4>₹1,699</h4>
+<button onclick="orderNow('E-Liquid Disposable')">Order</button>
+</div>
+
+</div>
+</section>
+
+<footer>
+© 2026 VapeShopChennai <br>
+Address: Ave,Kumaran nagar,A block, Annanagar East, Chennai, tamilnadu 600102
+</footer>
+
+<script>
+function orderNow(product){
+  let msg = `I want to order ${product}`;
+  let url = `https://wa.me/918950211927?text=${encodeURIComponent(msg)}`;
+  window.open(url,'_blank');
+}
+</script>
+
+</body>
+</html>

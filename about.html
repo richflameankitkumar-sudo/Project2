@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us | VapeShopChennai</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, sans-serif;
+}
+
+body{
+  background:#0f0f0f;
+  color:#fff;
+}
+
+/* HEADER */
+header{
+  background:#000;
+  padding:15px 20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+
+header h1{
+  color:#00ff99;
+  font-size:22px;
+}
+
+header a{
+  color:#00ff99;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+/* ABOUT SECTION */
+.about{
+  max-width:1000px;
+  margin:40px auto;
+  padding:0 20px;
+}
+
+.about h2{
+  color:#00ff99;
+  margin-bottom:15px;
+}
+
+.about p{
+  color:#ccc;
+  line-height:1.8;
+  margin-bottom:15px;
+}
+
+/* TESTIMONIALS */
+.testimonials{
+  margin-top:50px;
+}
+
+.testimonials h3{
+  color:#00ff99;
+  margin-bottom:20px;
+  text-align:center;
+}
+
+.testimonial-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.review{
+  background:#1a1a1a;
+  padding:20px;
+  border-radius:12px;
+  text-align:center;
+}
+
+.review img{
+  width:80px;
+  height:80px;
+  border-radius:50%;
+  object-fit:cover;
+  margin-bottom:10px;
+  border:2px solid #00ff99;
+}
+
+.review h4{
+  margin-bottom:5px;
+}
+
+.review span{
+  font-size:14px;
+  color:#00ff99;
+}
+
+.review p{
+  font-size:14px;
+  color:#bbb;
+  margin-top:8px;
+}
+
+/* FOOTER */
+footer{
+  background:#000;
+  text-align:center;
+  padding:80px;
+  margin-top:50px;
+  font-size:14px;
+  color:#ccc;
+}
+
+/* MOBILE */
+@media(max-width:600px){
+  .about{
+    margin:25px auto;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>VapeShopChennai</h1>
+  <a href="index.html">← Back to Home</a>
+</header>
+
+<section class="about">
+  <h2>About VapeShopChennai</h2>
+
+  <p>
+    VapeShopChennai is a trusted premium vape supplier based in Chennai,
+    offering high-quality disposable vapes, pod systems and e-liquids.
+  </p>
+
+  <p>
+    We focus on genuine products, smooth flavours and quick WhatsApp-based ordering.
+    Every product is quality-checked before delivery.
+  </p>
+
+  <p>
+    Our mission is to provide a reliable and hassle-free vape shopping experience
+    for customers who value quality and authenticity.
+  </p>
+
+  <div class="testimonials">
+    <h3>What Our Customers Say</h3>
+
+    <div class="testimonial-grid">
+
+      <div class="review">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Customer">
+        <h4>Rahul K.</h4>
+        <span>⭐⭐⭐⭐⭐</span>
+        <p>
+          Original products and fast response on WhatsApp.
+          Best vape store experience so far.
+        </p>
+      </div>
+
+      <div class="review">
+        <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Customer">
+        <h4>Anjali S.</h4>
+        <span>⭐⭐⭐⭐⭐</span>
+        <p>
+          Smooth flavours and good packaging.
+          Delivery was quick and hassle-free.
+        </p>
+      </div>
+
+      <div class="review">
+        <img src="https://randomuser.me/api/portraits/men/58.jpg" alt="Customer">
+        <h4>Vikas M.</h4>
+        <span>⭐⭐⭐⭐☆</span>
+        <p>
+          Genuine products and reasonable pricing.
+          Will definitely order again.
+        </p>
+      </div>
+
+      <div class="review">
+        <img src="https://randomuser.me/api/portraits/women/22.jpg" alt="Customer">
+        <h4>Pooja R.</h4>
+        <span>⭐⭐⭐⭐⭐</span>
+        <p>
+          Very professional service.
+          WhatsApp ordering is super easy.
+        </p>
+      </div>
+
+      <div class="review">
+        <img src="https://randomuser.me/api/portraits/men/12.jpg" alt="Customer">
+        <h4>Amit N.</h4>
+        <span>⭐⭐⭐⭐☆</span>
+        <p>
+          Good collection of disposable vapes.
+          Smooth experience overall.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+© 2026 VapeShopChennai | All Rights Reserved
+</footer>
+
+</body>
+</html>
